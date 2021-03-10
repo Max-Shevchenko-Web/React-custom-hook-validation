@@ -78,7 +78,7 @@ const useInput = (initialValue, validations) => {
 function App() {
   const email = useInput('', {isEmpty: true, minLength: 3, isEmail: true})
   const password = useInput('', {isEmpty: true, minLength: 5, maxLength: 8})
-  console.log(password)
+
   return (
     <div className='app'>
       <form >
